@@ -5,6 +5,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Typography } from '@mui/material';
 import SignIn from './Views/SignIn';
+import SignUp from './Views/SignUp';
 
 const theme = createTheme({
   palette: {
@@ -28,6 +29,7 @@ function App() {
         <>
           <Routes >
             <Route path="/" element={<SignIn />} />
+            <Route path="/signUp" element={<SignUp />} />
           </Routes>
         </>
       </BrowserRouter>
